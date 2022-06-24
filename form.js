@@ -48,5 +48,6 @@ const firebaseConfig = {
 
     }else{
       alert("No Active user Found")
+      window.location = "http://dashboard.fnode.eu.org/"
     }
   })
