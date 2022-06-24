@@ -1,6 +1,16 @@
 var auth = firebase.auth();
 var db = firebase.firestore();
 
+const firebaseConfig = {
+  apiKey: "AIzaSyAiSmK5Z7G42UofoI6qwsttf4xmX7teCd0",
+  authDomain: "database-2dd20.firebaseapp.com",
+  databaseURL: "https://database-2dd20-default-rtdb.firebaseio.com",
+  projectId: "database-2dd20",
+  storageBucket: "database-2dd20.appspot.com",
+  messagingSenderId: "612215052700",
+  appId: "1:612215052700:web:269ce1aec1fec2a6e59059",
+  measurementId: "G-3HN57C4KQL"
+};
 function signIn(){
     const email = document.getElementById('email').value;
     const pass = document.getElementById('pass').value;
