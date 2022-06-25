@@ -44,10 +44,10 @@ const firebaseConfig = {
   firebase.auth().onAuthStateChanged((user)=>{
     if(user){
       var email = user.email;
-      alert("Active user "+email);
+      alert("Active user go to dashboard using dashboard.fnode.eu.org/yourmail"+email);
+      window.location = "http://dashboard.fnode.eu.org/"
 
     }else{
       alert("No Active user Found")
-      window.location = "http://dashboard.fnode.eu.org/"
     }
   })
